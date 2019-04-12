@@ -1,0 +1,32 @@
+.navbar-inverse{
+	opacity:0.7;
+}
+		#sidebar{
+	position:fixed;
+	height:100%;
+	background-color:#222;
+	left:200px;
+	z-index:10;
+	transform:translate3d(-200px,0,0);
+	transition:transform 0.8s ease;
+	opacity:0.9;
+	
+}
+#sidebar ul li{
+	color:black;
+	list-style:none;
+	
+	border-bottom:1px solid rgba(100,100,100,0.3);
+}
+#sidebar ul li a{
+	tex-decoration:none;  
+}
+#sidebar.active{
+	left:50px !important;	
+}
+body{
+	overflow-x:hidden;
+}
+.active-nav .content{
+	transform:translate3d(200px,0,0);
+}
